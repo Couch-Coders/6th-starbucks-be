@@ -11,7 +11,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout backend
+        uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
           with:
             heroku_api_key: ${{secrets.HEROKU_API_KEY}}
