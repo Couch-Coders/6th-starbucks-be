@@ -13,9 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: echo Testing
-#      - uses: akhileshns/heroku-deploy@v3.12.12
-#          with:
-#            heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-#            heroku_app_name: "starbucks-custom-beverage" #Must be unique in Heroku
-#            heroku_email: "lololtoday@gmail.com"
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "starbucks-custom-beverage" #Must be unique in Heroku
+          heroku_email: "lololtoday@gmail.com"
