@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "python.defaultInterpreterPath": "~/.local/share/virtualenvs/backend-starbucks-STgN66rf/bin/python3",
+  "python.formatting.blackPath": "~/.local/share/virtualenvs/backend-starbucks-STgN66rf/bin/black",
+  "editor.defaultFormatter": null,
+  "python.formatting.provider": "black"
+}
